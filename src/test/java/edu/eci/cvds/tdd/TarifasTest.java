@@ -9,6 +9,9 @@ package edu.eci.cvds.tdd;
  *
  * @author daniel.gomez-su
  */
+import org.junit.Assert;
+import org.junit.Test;
+
 public class TarifasTest {
     
 }

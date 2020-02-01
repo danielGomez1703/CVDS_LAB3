@@ -19,7 +19,7 @@ public class RegistryTest {
     @Test
     public void validateRegistryResult() {
 
-        Person person = new Person("Pedro Yai",10,18,Gender.MALE,true);
+        Person person = new Person("Pedro Jai",10,18,Gender.MALE,true);
 
         RegisterResult result = registry.registerVoter(person);
 
@@ -56,7 +56,7 @@ public class RegistryTest {
     @Test
     public void validateRangeAge() {
 
-        Person person = new Person("carlos coronado", 10, 200, Gender.MALE, true);
+        Person person = new Person("felipe gonzalez", 10, 200, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.INVALID_AGE, result);
         
