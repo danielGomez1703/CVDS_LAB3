@@ -1,0 +1,10 @@
+Clases de equivalencia :
+
+
+	Validar si se la persona ya se encuentra registrada.
+	Validar si la persona se encuentra viva en el momento del registro
+	Verificar la mayoria de edad de la persona al momento del registro
+	Verificar si la edad esta dentro de un rango establecido por la empresa de registro que va de 0 a 120 años
+	
+	en caso de cumplir lo anterios el registro se efectua de forma correcta.
+	
