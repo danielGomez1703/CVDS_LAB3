@@ -9,6 +9,7 @@ package edu.eci.cvds.tdd.aerodescuentos;
  *
  * @author daniel.gomez-su
  */
+import javax.swing.JOptionPane;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -33,5 +34,35 @@ public class TarifasTest {
        double valor = calculadora.calculoTarifa(1000, 20, 32);
        Assert.assertEquals(1000, valor, 0.0001);
     }
+    @Test
+    public void validarDescuentosnsErrBase() {
+       try {
+            String valor = calculadora.calculoTarifa("String", 20, 32);
+            Assert.assertEquals("String", valor, 0.0001);
+       }catch (Exception e){
+           //JOptionPane.showMessageDialog(null, "error al hacer descuentos ");
+           
+       }
+    }
+    @Test
+    public void validarDescuentosnsErreantDias() {
+        try {
+            double valor = calculadora.calculoTarifa(1000,"String", 32);
+            Assert.assertEquals(1000, valor, 0.0001);
+        } catch (Exception e) {
+            //JOptionPane.showMessageDialog(null, "error al hacer descuentos ");
+
+        }
+    }
     
+    @Test
+    public void validarDescuentosnsErrEdad() {
+        try {
+            double valor = calculadora.calculoTarifa(1000,21, "String");
+            Assert.assertEquals(1000, valor, 0.0001);
+        } catch (Exception e) {
+            //JOptionPane.showMessageDialog(null, "error al hacer descuentos ");
+
+        }
+    }
 }
